@@ -1,7 +1,12 @@
+import { useRef } from "react"
+
 export default function About (): any {
+
+    const aboutRef = useRef(null)
+
     return (
         <div id="about">
-         Hello from About
+         <p ref={aboutRef}>Hello from About</p>
         </div>
     )
 }
