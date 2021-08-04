@@ -8,56 +8,111 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect, useLayoutEffect } from 'react'
 
 
 export default function Home() {
 
-  const [one, setOne] = useState('base one')
-  const [two, setTwo] = useState('base two')
-  const [three, setThree] = useState('base three')
+  const [one, setOne] = useState<string>('base one')
+  const [two, setTwo] = useState<string>('base two')
+  const [three, setThree] = useState<string>('base three')
+  const [bg, setBg] = useState<string>('background bg')
 
-  const isBrowser: boolean = typeof window! == 'undefined'
-  const scrollRef: any = useRef(0)
+
+
   const aboutRef: any = useRef()
   const skillsRef: any = useRef()
   const projectsRef: any = useRef()
   const contactRef: any = useRef()
-  let y: number
-  if (!isBrowser) {
-    y = window.pageYOffset
-    scrollRef.current.y
+  const footerRef: any = useRef()
+  
+  
+  // useEffect (() => {
+  //   setAboutHeight(aboutRef.current.getBoundingClientRect().top)
+
+  //   // if (window.scrollY > aboutHeight && aboutHeight > 0) {
+  //   //   setOne('base aboutOne')
+  //   //   setTwo('base aboutTwo')
+  //   //   setThree('base aboutThree')
+  //   // } else {
+  //   //   setOne('base one')
+  //   //   setTwo('base two')
+  //   //   setThree('base three')
+  //   // }
+  // }, [])
+
+
+
+  // console.log(window.scrollY)
+  // console.log(contactHeight)
+  // console.log(footerHeight)
+
+  useLayoutEffect(() => {
+    
+    window.addEventListener('scroll', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [])
+
+
+
+
+  const onScroll = () => {
+    const scrollPos = window.scrollY
+    // console.log('scrollPos: ', scrollPos)
+    console.log('current scroll position: ', scrollPos)
+    // console.log('about height: ', aboutHeight)
+    console.log('about height: ',aboutRef.current.getBoundingClientRect().top)
+
+    if (scrollPos > aboutRef.current.getBoundingClientRect().top) {
+      setOne('base aboutOne')
+      setTwo('base aboutTwo')
+      setThree('base aboutThree')
+      setBg('background bg-about')
+    // elif (scrollPos > )
+    } else {
+      setOne('base one')
+      setTwo('base two')
+      setThree('base three')
+      setBg('background bg')
+    }
   }
 
-  const aboutClick = (event: any): void => {
+
+  const aboutClick = (): void => {
     //.current is verification that your element has rendered
     if(aboutRef.current){
         aboutRef.current.scrollIntoView({ 
-           behavior: "smooth"
+           behavior: "smooth",
+           block: "center"
       })
     }
   }
 
-  const skillsClick = (event: any): void => {
+  const skillsClick = (): void => {
     if(skillsRef.current){
       skillsRef.current.scrollIntoView({ 
-         behavior: "smooth"
+         behavior: "smooth",
+         block: "center"
       })
     }
   }
 
-  const projectsClick = (event: any): void => {
+  const projectsClick = (): void => {
     if(projectsRef.current){
       projectsRef.current.scrollIntoView({ 
-         behavior: "smooth"
+         behavior: "smooth",
+         block: "center"
       })
     }
   }
 
-  const contactClick = (event: any): void => { 
+  const contactClick = (): void => { 
     if(contactRef.current){
       contactRef.current.scrollIntoView({ 
-         behavior: "smooth"
+         behavior: "smooth",
+         block: "center"
       })
     }
   }
@@ -80,7 +135,7 @@ export default function Home() {
         <button onClick={projectsClick} className="navButton">Projects</button>
         <button onClick={contactClick} className="navButton">Contact</button>
       </nav>
-      <div className="background">
+      <div className={bg}>
         <div id="one" className={one}></div>
         <div id="two" className={two}></div>
         <div id="three" className={three}></div>
@@ -102,7 +157,7 @@ export default function Home() {
         <div ref={contactRef} className="contact">
           <Contact />
         </div>
-        <div className="footer">
+        <div ref={footerRef} className="footer">
           <Footer />
         </div>
       </div>
@@ -142,8 +197,16 @@ export default function Home() {
           width: 100%;
           height: 100%;
           position: fixed;
-          background: #071b3a;
           z-index: -1;
+          transition-duration: .4s;
+        }
+
+        .bg {
+          background: #071b3a;
+        }
+
+        .bg-about {
+          background: #3E5D58;
         }
 
         .base {
@@ -162,18 +225,20 @@ export default function Home() {
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: .4s;
         }
 
         .aboutOne {
           border-radius: 100%;
           width: 600px;
           height: 600px;
-          background-color: #DDE5ED;
+          background-color: #92ACA0;
           top:-200px;
           left: 150px;
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: .4s;
         }
         
         .two {
@@ -182,14 +247,18 @@ export default function Home() {
           background-color: #7C336C;
           bottom:-30px;
           left:-80px;
+          transition-duration: .4s;
+          transform:rotate(0) translate(80px) rotate(0);
         }
 
         .aboutTwo {
           width: 500px;
           height: 800px;
-          background-color: #92ACA0;
+          background-color: #55827b;
           bottom:-30px;
           left:-80px;
+          transition-duration: .4s;
+          transform:rotate(0) translate(80px) rotate(0);
         }
         
         .three {
@@ -202,6 +271,7 @@ export default function Home() {
           background-color: #B3588A;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: .4s;
         }
 
         .aboutThree {
@@ -210,10 +280,11 @@ export default function Home() {
           height: 500px;
           bottom:10px;
           right:-50px;
-          opacity: .6;
-          background-color: #3E5D58;
+          opacity: .4;
+          background-color: #DDE5ED;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: .4s;
         }
 
         .index {
@@ -256,7 +327,7 @@ export default function Home() {
         .contact {
           display: flex;
           min-height: 75vh;
-          height: 75vh;
+          height: 100vh;
           align-items: center;
         }
 
