@@ -48,29 +48,59 @@ export default function Home() {
   // console.log(footerHeight)
 
   useLayoutEffect(() => {
-    
+    // console.log('about: ', aboutRef.current.getBoundingClientRect().top)
+    // console.log('skills: ', skillsRef.current.getBoundingClientRect().top)
+    // console.log('projects: ', projectsRef.current.getBoundingClientRect().top)
+    // console.log('contact: ', contactRef.current.getBoundingClientRect().top)
     window.addEventListener('scroll', onScroll)
     return () => {
       window.removeEventListener('scroll', onScroll)
     }
-  }, [])
+  },[])
 
+  function aboutTheme(): void {
+    setOne('base aboutOne')
+    setTwo('base aboutTwo')
+    setThree('base aboutThree')
+    setBg('background aboutBg')
+  }
 
+  function skillsTheme(): void {
+    setOne('base skillsOne')
+    setTwo('base skillsTwo')
+    setThree('base skillsThree')
+    setBg('background skillsBg')
+  }
 
+  function projectsTheme(): void {
+    setOne('base projectsOne')
+    setTwo('base projectsTwo')
+    setThree('base projectsThree')
+    setBg('background projectsBg')
+  }
+
+  function contactTheme(): void {
+    setOne('base contactOne')
+    setTwo('base contactTwo')
+    setThree('base contactThree')
+    setBg('background contactBg')
+  }
 
   const onScroll = () => {
-    const scrollPos = window.scrollY
     // console.log('scrollPos: ', scrollPos)
-    console.log('current scroll position: ', scrollPos)
+    // console.log('current scroll position: ', scrollPos)
     // console.log('about height: ', aboutHeight)
-    console.log('about height: ',aboutRef.current.getBoundingClientRect().top)
-
-    if (scrollPos > aboutRef.current.getBoundingClientRect().top) {
-      setOne('base aboutOne')
-      setTwo('base aboutTwo')
-      setThree('base aboutThree')
-      setBg('background bg-about')
-    // elif (scrollPos > )
+    // console.log('about height: ',aboutRef.current.getBoundingClientRect().top)
+    // console.log('client height', aboutRef.current.clientHeight)
+    // console.log('clientRect', aboutRef.current.getBoundingClientRect().top)
+    console.log('scroll position: ',window.scrollY)
+    console.log('height: ', skillsRef.current.clientHeight)
+    if (window.scrollY > aboutRef.current.getBoundingClientRect().top && window.scrollY < aboutRef.current.offsetTop + aboutRef.current.clientHeight / 3) {
+      aboutTheme()
+    } else if (window.scrollY > skillsRef.current.getBoundingClientRect().top && window.scrollY < skillsRef.current.offsetTop + skillsRef.current.clientHeight / 3) {
+      skillsTheme()
+    } else if (window.scrollY > projectsRef.current.getBoundingClientRect().top && window.scrollY < projectsRef.current.offsetTop + projectsRef.current.clientHeight / 3) {
+      projectsTheme()
     } else {
       setOne('base one')
       setTwo('base two')
@@ -198,14 +228,26 @@ export default function Home() {
           height: 100%;
           position: fixed;
           z-index: -1;
-          transition-duration: .4s;
+          transition-duration: 1s;
         }
 
         .bg {
           background: #071b3a;
         }
 
-        .bg-about {
+        .aboutBg {
+          background: #3E5D58;
+        }
+
+        .skillsBg {
+          background: #ffaf7a;
+        }
+
+        .projectsBg {
+          background: #DF5E5E;
+        }
+
+        .contactBg {
           background: #3E5D58;
         }
 
@@ -225,7 +267,7 @@ export default function Home() {
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: .4s;
+          transition-duration: 1s;
         }
 
         .aboutOne {
@@ -238,7 +280,46 @@ export default function Home() {
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: .4s;
+          transition-duration: 1s;
+        }
+
+        .skillsOne {
+          border-radius: 100%;
+          width: 600px;
+          height: 600px;
+          background-color: #ff9d5c;
+          top:-200px;
+          left: 150px;
+          z-index: 3;
+          animation: fly 10s linear infinite;
+          transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .projectsOne {
+          border-radius: 100%;
+          width: 600px;
+          height: 600px;
+          background-color: #E98580;
+          top:-200px;
+          left: 150px;
+          z-index: 3;
+          animation: fly 10s linear infinite;
+          transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .contactOne {
+          border-radius: 100%;
+          width: 600px;
+          height: 600px;
+          background-color: #92ACA0;
+          top:-200px;
+          left: 150px;
+          z-index: 3;
+          animation: fly 10s linear infinite;
+          transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: 1s;
         }
         
         .two {
@@ -247,7 +328,7 @@ export default function Home() {
           background-color: #7C336C;
           bottom:-30px;
           left:-80px;
-          transition-duration: .4s;
+          transition-duration: 1s;
           transform:rotate(0) translate(80px) rotate(0);
         }
 
@@ -257,7 +338,37 @@ export default function Home() {
           background-color: #55827b;
           bottom:-30px;
           left:-80px;
-          transition-duration: .4s;
+          transition-duration: 1s;
+          transform:rotate(0) translate(80px) rotate(0);
+        }
+
+        .skillsTwo {
+          width: 500px;
+          height: 800px;
+          background-color: #fc8451;
+          bottom:-30px;
+          left:-80px;
+          transition-duration: 1s;
+          transform:rotate(0) translate(80px) rotate(0);
+        }
+
+        .projectsTwo {
+          width: 500px;
+          height: 800px;
+          background-color: #FDD2BF;
+          bottom:-30px;
+          left:-80px;
+          transition-duration: 1s;
+          transform:rotate(0) translate(80px) rotate(0);
+        }
+
+        .contactTwo {
+          width: 500px;
+          height: 800px;
+          background-color: #55827b;
+          bottom:-30px;
+          left:-80px;
+          transition-duration: 1s;
           transform:rotate(0) translate(80px) rotate(0);
         }
         
@@ -267,11 +378,11 @@ export default function Home() {
           height: 500px;
           bottom:10px;
           right:-50px;
-          opacity: .6;
+          opacity: .4;
           background-color: #B3588A;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: .4s;
+          transition-duration: 1s;
         }
 
         .aboutThree {
@@ -280,11 +391,50 @@ export default function Home() {
           height: 500px;
           bottom:10px;
           right:-50px;
-          opacity: .4;
+          opacity: .5;
           background-color: #DDE5ED;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: .4s;
+          transition-duration: 1s;
+        }
+
+        .skillsThree {
+          border-radius: 100%;
+          width: 500px;
+          height: 500px;
+          bottom:10px;
+          right:-50px;
+          opacity: .5;
+          background-color: #ff5349;
+          animation: flyPlus 18s linear infinite;
+          transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .projectsThree {
+          border-radius: 100%;
+          width: 500px;
+          height: 500px;
+          bottom:10px;
+          right:-50px;
+          opacity: .5;
+          background-color: #492F10;
+          animation: flyPlus 18s linear infinite;
+          transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .contactThree {
+          border-radius: 100%;
+          width: 500px;
+          height: 500px;
+          bottom:10px;
+          right:-50px;
+          opacity: .5;
+          background-color: #DDE5ED;
+          animation: flyPlus 18s linear infinite;
+          transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: 1s;
         }
 
         .index {
@@ -305,28 +455,28 @@ export default function Home() {
 
         .about {
           display: flex;
-          min-height: 75vh;
-          height: 75vh;
+          min-height: 100vh;
+          height: 100vh;
           align-items: center;
         }
 
         .skills {
           display: flex;
-          min-height: 50vh;
-          height: 50vh;
+          min-height: 100vh;
+          height: 100vh;
           align-items: center;
         }
 
         .projects {
           display: flex;
-          min-height: 75vh;
-          height: 75vh;
+          min-height: 100vh;
+          height: 100vh;
           align-items: center;
         }
 
         .contact {
           display: flex;
-          min-height: 75vh;
+          min-height: 100vh;
           height: 100vh;
           align-items: center;
         }
