@@ -26,32 +26,9 @@ export default function Home() {
   const contactRef: any = useRef()
   const footerRef: any = useRef()
   
-  
-  // useEffect (() => {
-  //   setAboutHeight(aboutRef.current.getBoundingClientRect().top)
-
-  //   // if (window.scrollY > aboutHeight && aboutHeight > 0) {
-  //   //   setOne('base aboutOne')
-  //   //   setTwo('base aboutTwo')
-  //   //   setThree('base aboutThree')
-  //   // } else {
-  //   //   setOne('base one')
-  //   //   setTwo('base two')
-  //   //   setThree('base three')
-  //   // }
-  // }, [])
-
-
-
-  // console.log(window.scrollY)
-  // console.log(contactHeight)
-  // console.log(footerHeight)
 
   useLayoutEffect(() => {
-    // console.log('about: ', aboutRef.current.getBoundingClientRect().top)
-    // console.log('skills: ', skillsRef.current.getBoundingClientRect().top)
-    // console.log('projects: ', projectsRef.current.getBoundingClientRect().top)
-    // console.log('contact: ', contactRef.current.getBoundingClientRect().top)
+
     window.addEventListener('scroll', onScroll)
     return () => {
       window.removeEventListener('scroll', onScroll)
@@ -87,17 +64,11 @@ export default function Home() {
   }
 
   const onScroll = () => {
-    // console.log('scrollPos: ', scrollPos)
-    // console.log('current scroll position: ', scrollPos)
-    // console.log('about height: ', aboutHeight)
-    // console.log('about height: ',aboutRef.current.getBoundingClientRect().top)
-    // console.log('client height', aboutRef.current.clientHeight)
-    // console.log('clientRect', aboutRef.current.getBoundingClientRect().top)
     console.log('scroll position: ',window.scrollY)
     console.log('height: ', skillsRef.current.clientHeight)
     if (window.scrollY > aboutRef.current.getBoundingClientRect().top && window.scrollY < aboutRef.current.offsetTop + aboutRef.current.clientHeight / 3) {
       aboutTheme()
-    } else if (window.scrollY > skillsRef.current.getBoundingClientRect().top && window.scrollY < skillsRef.current.offsetTop + skillsRef.current.clientHeight / 3) {
+    } else if (window.scrollY > skillsRef.current.getBoundingClientRect().top && window.scrollY <  skillsRef.current.offsetTop + skillsRef.current.clientHeight / 3) {
       skillsTheme()
     } else if (window.scrollY > projectsRef.current.getBoundingClientRect().top && window.scrollY < projectsRef.current.offsetTop + projectsRef.current.clientHeight / 3) {
       projectsTheme()
@@ -111,7 +82,6 @@ export default function Home() {
 
 
   const aboutClick = (): void => {
-    //.current is verification that your element has rendered
     if(aboutRef.current){
         aboutRef.current.scrollIntoView({ 
            behavior: "smooth",
@@ -147,11 +117,7 @@ export default function Home() {
     }
   }
 
-  // function handleScroll (y: number, one: string, two: string, three: string): void {
-  //   if y > 100vh
-  // }
   
-
   return (
     <div className="indexComponent">
       <Head>
