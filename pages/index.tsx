@@ -64,14 +64,19 @@ export default function Home() {
   }
 
   const onScroll = () => {
-    console.log('scroll position: ',window.scrollY)
-    console.log('height: ', skillsRef.current.clientHeight)
+    // console.log('scroll position: ',window.scrollY)
+    // console.log('height: ', skillsRef.current.clientHeight)
     if (window.scrollY > aboutRef.current.getBoundingClientRect().top && window.scrollY < aboutRef.current.offsetTop + aboutRef.current.clientHeight / 3) {
       aboutTheme()
     } else if (window.scrollY > skillsRef.current.getBoundingClientRect().top && window.scrollY <  skillsRef.current.offsetTop + skillsRef.current.clientHeight / 3) {
       skillsTheme()
     } else if (window.scrollY > projectsRef.current.getBoundingClientRect().top && window.scrollY < projectsRef.current.offsetTop + projectsRef.current.clientHeight / 3) {
       projectsTheme()
+    } else if (window.scrollY > contactRef.current.getBoundingClientRect().top) {
+      setOne('base contactOne')
+      setTwo('base contactTwo')
+      setThree('base contactThree')
+      setBg('background contactBg')
     } else {
       setOne('base one')
       setTwo('base two')
@@ -206,7 +211,7 @@ export default function Home() {
         }
 
         .skillsBg {
-          background: #ffaf7a;
+          background: #9E5758;
         }
 
         .projectsBg {
@@ -214,7 +219,7 @@ export default function Home() {
         }
 
         .contactBg {
-          background: #3E5D58;
+          background: #6e304b;
         }
 
         .base {
@@ -240,7 +245,7 @@ export default function Home() {
           border-radius: 100%;
           width: 600px;
           height: 600px;
-          background-color: #92ACA0;
+          background-color: #474c4e;
           top:-200px;
           left: 150px;
           z-index: 3;
@@ -253,7 +258,7 @@ export default function Home() {
           border-radius: 100%;
           width: 600px;
           height: 600px;
-          background-color: #ff9d5c;
+          background-color: #9E5758;
           top:-200px;
           left: 150px;
           z-index: 3;
@@ -266,7 +271,7 @@ export default function Home() {
           border-radius: 100%;
           width: 600px;
           height: 600px;
-          background-color: #E98580;
+          background-color: #492F10;
           top:-200px;
           left: 150px;
           z-index: 3;
@@ -279,7 +284,7 @@ export default function Home() {
           border-radius: 100%;
           width: 600px;
           height: 600px;
-          background-color: #92ACA0;
+          background-color: #6e304b;
           top:-200px;
           left: 150px;
           z-index: 3;
@@ -299,9 +304,10 @@ export default function Home() {
         }
 
         .aboutTwo {
+          border-radius: 70%;
           width: 500px;
           height: 800px;
-          background-color: #55827b;
+          background-color: #92ACA0;
           bottom:-30px;
           left:-80px;
           transition-duration: 1s;
@@ -311,7 +317,7 @@ export default function Home() {
         .skillsTwo {
           width: 500px;
           height: 800px;
-          background-color: #fc8451;
+          background-color: #183B5B;
           bottom:-30px;
           left:-80px;
           transition-duration: 1s;
@@ -331,7 +337,7 @@ export default function Home() {
         .contactTwo {
           width: 500px;
           height: 800px;
-          background-color: #55827b;
+          background-color: #a37c82;;
           bottom:-30px;
           left:-80px;
           transition-duration: 1s;
@@ -357,8 +363,8 @@ export default function Home() {
           height: 500px;
           bottom:10px;
           right:-50px;
-          opacity: .5;
-          background-color: #DDE5ED;
+          opacity: .8;
+          background-color: #55827b;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
@@ -371,7 +377,7 @@ export default function Home() {
           bottom:10px;
           right:-50px;
           opacity: .5;
-          background-color: #ff5349;
+          background-color: #2D99A5;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
@@ -383,8 +389,8 @@ export default function Home() {
           height: 500px;
           bottom:10px;
           right:-50px;
-          opacity: .5;
-          background-color: #492F10;
+          opacity: .9;
+          background-color: #DF5E5E;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
@@ -396,8 +402,8 @@ export default function Home() {
           height: 500px;
           bottom:10px;
           right:-50px;
-          opacity: .5;
-          background-color: #DDE5ED;
+          opacity: .8;
+          background-color: #b36f8c;
           animation: flyPlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
@@ -421,22 +427,22 @@ export default function Home() {
 
         .about {
           display: flex;
-          min-height: 100vh;
-          height: 100vh;
+          min-height: 50vh;
+          height: 50vh;
           align-items: center;
         }
 
         .skills {
           display: flex;
-          min-height: 100vh;
-          height: 100vh;
+          min-height: 50vh;
+          height: 50vh;
           align-items: center;
         }
 
         .projects {
           display: flex;
-          min-height: 100vh;
-          height: 100vh;
+          min-height: 50vh;
+          height: 50vh;
           align-items: center;
         }
 

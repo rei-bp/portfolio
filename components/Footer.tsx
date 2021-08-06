@@ -1,7 +1,14 @@
-export default function Welcome(): any {
+export default function Footer(): any {
     return (
-        <div>
-            hello from Footer
+        <div className='footer'>
+            designed and built by Rei
+            <br></br>with vanilla CSS, TypeScript, and Next.js
+
+        <style jsx>{`
+        .footer {
+            text-align: center;
+        }
+        `}</style>
         </div>
     )
 }
