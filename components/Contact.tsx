@@ -1,11 +1,25 @@
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import { useRef, useEffect } from 'react'
 
 
 
 const Contact = () : any => {
+
+    const nameRef: any = useRef(null)
+
+    const copyAgain = (): void => {
+        nameRef.current.title='click to copy!'
+    }
+
+    const copy = (): void => {
+        navigator.clipboard.writeText(nameRef.current.innerText)
+        nameRef.current.title = 'Copied!'
+        setTimeout(function(){nameRef.current.title='click to copy!'} , 5000)
+    }
+
     return (
         <div className="contact">
-            <div className='title'>Say hello at <span>reinard.bp@gmail.com</span></div>
+            <div className='title'>Say hello at <button title='click to copy!' className='me' onClick={copy} ref={nameRef}>reinard.bp@gmail.com</button></div>
             <div className='description'>I am currently open to opportunities! If you have any questions at all or if you would just like to say hello I'd be more than happy to hear from you.</div>
             <div className='resume'>
                 <a href='Reinard-Pagdilao-Resume.docx' download><button>Resume</button></a>
@@ -15,15 +29,27 @@ const Contact = () : any => {
                 <a href='https://github.com/rei-bp' className='icon' target="_blank" rel="noopener noreferrer"><AiOutlineGithub fontSize='1.5rem'  /></a>
             </div>
             <style jsx>{`
-                span {
+
+                .me {
+                    background: none;
+                    border: none;
+                    font-size: 2.5rem;
                     transition-duration: .4s;
                     font-weight: bold;
                     color: rgba(255, 211, 15);
+                    text-shadow: 2px 2px 4px #000000ad
                 }
 
-                span:hover {
+                .me:hover {
                     transition-duration: 1s;
                     text-shadow: 3px 5px 10px #000000;
+                    background: none;
+                    cursor: pointer;
+                }
+
+                .me:active {
+                    transition-duration .1s;
+                    color: #fff;
                 }
 
                 a {
@@ -43,7 +69,7 @@ const Contact = () : any => {
                 }
                 
                 .title {
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                 }
                 
                 .email {
@@ -53,6 +79,7 @@ const Contact = () : any => {
                 
                 
                 button {
+                    transition-duration: .3s;
                     align-items: center;
                     border: none;
                     border-radius: 25px;

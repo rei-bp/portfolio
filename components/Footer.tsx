@@ -7,7 +7,7 @@ const Footer = ():any => {
         <style jsx>{`
         .footer {
             text-align: center;
-            font-size: .8rem;
+            font-size: .9rem;
         }
         `}</style>
         </div>

@@ -223,6 +223,7 @@ export default function Home() {
         }
         
         button {
+          transition-duration: .3s;
           border: none;
           border-radius: 25px;
           background: rgb(0,0,0, 0.3);
@@ -282,30 +283,30 @@ export default function Home() {
 
         .base {
           position: absolute;
-          filter: blur(60px);
+          filter: blur(10vh);
           opacity: .8;
         }
 
         .one {
           border-radius: 100%;
-          width: 600px;
-          height: 600px;
+          width: 80vh;
+          height: 80vh;
           background-color: #373372;
-          top:-200px;
-          left: 150px;
+          top:-20vh;
+          left: 80vh;
           z-index: 3;
           animation: fly 10s linear infinite;
-          transform:rotate(0) translate(80px) rotate(0);
+          transform:rotate(0) translate(5vh) rotate(0);
           transition-duration: 1s;
         }
 
         .aboutOne {
           border-radius: 100%;
-          width: 600px;
-          height: 600px;
+          width: 80vh;
+          height: 80vh;
           background-color: #474c4e;
-          top:-200px;
-          left: 150px;
+          top:-20vh;
+          left: 80vh;
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
@@ -314,11 +315,11 @@ export default function Home() {
 
         .skillsOne {
           border-radius: 100%;
-          width: 600px;
-          height: 600px;
+          width: 80vh;
+          height: 80vh;
           background-color: #9E5758;
-          top:-200px;
-          left: 150px;
+          top:-20vh;
+          left: 80vh;
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
@@ -327,11 +328,11 @@ export default function Home() {
 
         .projectsOne {
           border-radius: 100%;
-          width: 600px;
-          height: 600px;
+          width: 80vh;
+          height: 80vh;
           background-color: #492F10;
-          top:-200px;
-          left: 150px;
+          top:-20vh;
+          left: 80vh;
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
@@ -340,11 +341,11 @@ export default function Home() {
 
         .contactOne {
           border-radius: 100%;
-          width: 600px;
-          height: 600px;
+          width: 80vh;
+          height: 80vh;
           background-color: #6e304b;
-          top:-200px;
-          left: 150px;
+          top:-20vh;
+          left: 80vh;
           z-index: 3;
           animation: fly 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
@@ -352,8 +353,9 @@ export default function Home() {
         }
         
         .two {
-          width: 500px;
-          height: 800px;
+          border-radius: 70%;
+          width: 80vh;
+          height: 100vh;
           background-color: #7C336C;
           bottom:-30px;
           left:-80px;

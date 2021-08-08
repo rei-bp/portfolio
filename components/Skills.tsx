@@ -42,7 +42,7 @@ const Skills = (): any => {
             <style jsx>{`
 
                 .title {
-                    font-size: 2rem;
+                    font-size: 3rem;
                     font-weight: bold;
                     margin-bottom: 3rem;
                     text-align: center;
