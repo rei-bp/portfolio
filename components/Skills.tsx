@@ -80,6 +80,7 @@ const Skills = (): any => {
                 
                 .tech {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     align-content: center;
                     justify-content: center;

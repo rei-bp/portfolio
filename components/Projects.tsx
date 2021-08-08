@@ -50,7 +50,7 @@ const Projects = (): any => {
                     justify-content: center;
                     align-items: center;
                     align-content; center;
-                    flex-flow: column wrap;
+                    flex-direction: column;
                     margin: 3vh auto 0 auto;
                 }
 
@@ -63,7 +63,7 @@ const Projects = (): any => {
 
                 .card {
                     display: flex;
-                    flex-flow: row wrap;
+                    flex-direction: row;
                     justify-content: center;
                     margin: 5vh 0;
 
@@ -72,7 +72,7 @@ const Projects = (): any => {
                 .descriptionContainer {
 
                     display: flex;
-                    flex-flow: column wrap;
+                    flex-direction: column;
                     justify-content: center;
                     width: 30%;
                     max-width: 30%;
@@ -96,7 +96,7 @@ const Projects = (): any => {
                 }
 
                 .magikarp {
-                    border-radius: 15px;
+                    border-radius: 25px;
                 }
                     
             `}</style>

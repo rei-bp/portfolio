@@ -37,7 +37,7 @@ const Contact = () : any => {
                     transition-duration: .4s;
                     font-weight: bold;
                     color: rgba(255, 211, 15);
-                    text-shadow: 2px 2px 4px #000000ad
+                    text-shadow: 2px 2px 4px #000000ad;
                 }
 
                 .me:hover {

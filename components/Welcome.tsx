@@ -2,7 +2,7 @@ const Welcome = (): any => {
     return (
         <div className='welcome'>
             <p className='intro'>Welcome, my name is</p>
-            <p className='nameBox'><span className='name'>Reinard Pagdilao</span></p>
+            <p className='nameBox'><span className='name'>Rei Pagdilao</span></p>
             <p className='brand'>and I'm a software engineer who builds enjoyable web applications while providing clean, concise, scalable and readable code. </p>
             <style jsx>{`
                 .welcome {

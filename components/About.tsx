@@ -26,7 +26,7 @@ const About = (): any => {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-flow: row wrap;
+                flex-direction: row;
                 margin: 0 auto;
                 animation: fadeIn 2s;
             }

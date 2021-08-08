@@ -2,7 +2,7 @@ const Footer = ():any => {
     return (
         <div className='footer'>
             designed and built by Rei
-            <br></br>with vanilla CSS, TypeScript, and Next.js
+            <br></br>with vanilla CSS, Next.js, and TypeScript
 
         <style jsx>{`
         .footer {
