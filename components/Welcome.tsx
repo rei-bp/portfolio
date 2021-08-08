@@ -1,4 +1,4 @@
-export default function Welcome(): any {
+const Welcome = (): any => {
     return (
         <div className='welcome'>
             <p className='intro'>Welcome, my name is</p>
@@ -32,3 +32,5 @@ export default function Welcome(): any {
         </div>
     )
 }
+
+export default Welcome

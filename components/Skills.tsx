@@ -1,8 +1,5 @@
 
-
-
-
-export default function Skills(): any {
+const Skills = (): any => {
 
     return (
         <div className="skills">
@@ -102,3 +99,5 @@ export default function Skills(): any {
         </div>
     )
 }
+
+export default Skills

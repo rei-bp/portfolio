@@ -1,4 +1,4 @@
-export default function Footer(): any {
+const Footer = ():any => {
     return (
         <div className='footer'>
             designed and built by Rei
@@ -13,3 +13,5 @@ export default function Footer(): any {
         </div>
     )
 }
+
+export default Footer

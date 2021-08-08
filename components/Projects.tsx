@@ -1,7 +1,7 @@
 import { AiOutlineGithub } from 'react-icons/ai'
 import Image from "next/image"
 
-export default function Projects(): any {
+const Projects = (): any => {
     return (
         <div className="projects">
             <div className="title">Projects</div>
@@ -103,3 +103,5 @@ export default function Projects(): any {
         </div>
     )
 }
+
+export default Projects

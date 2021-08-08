@@ -1,5 +1,5 @@
 import Image from "next/image"
-export default function About (): any {
+const About = (): any => {
 
 
     return (
@@ -55,3 +55,5 @@ export default function About (): any {
         </div>
     )
 }
+
+export default About

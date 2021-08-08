@@ -2,13 +2,11 @@ import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
 
 
 
-export default function Contact (): any {
+const Contact = () : any => {
     return (
-        // <IconContext.Provider value={{}}>
         <div className="contact">
             <div className='title'>Say hello at <span>reinard.bp@gmail.com</span></div>
             <div className='description'>I am currently open to opportunities! If you have any questions at all or if you would just like to say hello I'd be more than happy to hear from you.</div>
-            {/* <div className='email'>reinard.bp@gmail.com</div> */}
             <div className='resume'>
                 <a href='Reinard-Pagdilao-Resume.docx' download><button>Resume</button></a>
             </div>
@@ -92,6 +90,7 @@ export default function Contact (): any {
                 
                 `}</style>
         </div>
-        // {/* </IconContext.Provider> */}
     )
 }
+
+export default Contact
