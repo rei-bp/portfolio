@@ -52,6 +52,7 @@ export default function Skills(): any {
                     font-size: 2rem;
                     font-weight: bold;
                     margin-bottom: 1rem;
+                    text-align: center;
                 }
 
                 .stack {
@@ -65,15 +66,15 @@ export default function Skills(): any {
                     justify-content: center;
                     align-content: center;
                     text-align: center;
-                    width: 25%;
+                    width: 30%;
                     font-weight: bold;
                     font-size: 1.1rem;
                     border-right: 2px solid white;
-                    padding-right: 1rem;
+
                 }
                 
                 .tech {
-                    width: 75%;
+                    margin-left: -10px;
                 }
 
                 .techList li {

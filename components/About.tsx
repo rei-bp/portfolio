@@ -6,18 +6,24 @@ export default function About (): any {
 
     return (
         <div className='about'>
-         <div className='description'>
             <div className='title'>About Me</div>
-            <p className='content'>Hello! I go by Rei for short and my pronouns are he/him. My passion for coding started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on finding programming solutions and creating awesome stuff for the web.</p>
-         </div>
-         <Image className='rei' src={Rei} width='150px' height='150px' />
-         <style jsx>{`
+            <div className='container'>
+                <div className='description'>
+                    <p className='content'>Hello! I go by Rei for short and my pronouns are he/him. My passion for coding started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on finding programming solutions and creating awesome stuff for the web.</p>
+                </div>
+                <Image className='rei' src={Rei} width='150px' height='150px' placeholder='blur' blurDataURL='rei.png'/>
+            </div>
+            <style jsx>{`
             @keyframes fadeIn {
                 0% {opacity: 0;}
                 100% {opacity: 1;}
             }
-         
+
             .about {
+                width: 60%;
+                margin: 0 auto;
+            }
+            .container {
                 width: 80%;
                 display: flex;
                 justify-content: center;
@@ -30,6 +36,9 @@ export default function About (): any {
             .title {
                 font-weight: bold;
                 font-size: 2rem;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
             }
 
             .description {

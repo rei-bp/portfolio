@@ -163,9 +163,59 @@ export default function Home() {
         </div>
       </div>
       <style jsx>{`
+        .indexComponent {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .index {
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+        }
+
+        .welcome {
+          display: flex;
+          align-items: center;
+          min-height: 100vh;
+          height: 100vh;
+        }
+
+        .about {
+          display: flex;
+          min-height: 50vh;
+          height: 50vh;
+          align-items: center;
+        }
+
+        .skills {
+          display: flex;
+          min-height: 60vh;
+          height: 60vh;
+          align-items: center;
+        }
+
+        .projects {
+          display: flex;
+          min-height: 150vh;
+          height: 150vh;
+          align-items: center;
+        }
+
+        .contact {
+          display: flex;
+          min-height: 100vh;
+          height: 100vh;
+          align-items: center;
+        }
+
         nav {
             display: flex;
             position: fixed;
+            z-index: 5;
             width: 100%;
             background: #071b3a66;
             height: 30px;
@@ -408,53 +458,6 @@ export default function Home() {
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
         }
-
-        .index {
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          color: #ffffff;
-        }
-
-        .welcome {
-          display: flex;
-          align-items: center;
-          min-height: 100vh;
-          height: 100vh;
-        }
-
-        .about {
-          display: flex;
-          min-height: 50vh;
-          height: 50vh;
-          align-items: center;
-        }
-
-        .skills {
-          display: flex;
-          min-height: 50vh;
-          height: 50vh;
-          align-items: center;
-        }
-
-        .projects {
-          display: flex;
-          min-height: 50vh;
-          height: 50vh;
-          align-items: center;
-        }
-
-        .contact {
-          display: flex;
-          min-height: 100vh;
-          height: 100vh;
-          align-items: center;
-        }
-
-
-
       `}</style>
     </div>
   )
