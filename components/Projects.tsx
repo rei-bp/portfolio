@@ -29,7 +29,7 @@ export default function Projects(): any {
                     <div className='tech'>Built with HTML Canvas and JavaScript</div>
                     <div className='description'>A front-end web based game containing animation, movement, applications and basic OOP understanding.</div>
                 </div>                
-                <Image className='magikarp' src={Magikarp} height='250vh' width='300vh' placeholder='blur' blurDataURL='mtp.gif'></Image>
+                <Image className='magikarp' src={Magikarp as any} height='250vh' width='300vh' placeholder='blur' blurDataURL='mtp.gif'></Image>
             </div>
             <style jsx global>{`
                 .projects {

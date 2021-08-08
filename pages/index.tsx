@@ -8,7 +8,7 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
-import { useRef, useState, useEffect, useLayoutEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
   const footerRef: any = useRef()
   
 
-  useLayoutEffect(() => {
+  useEffect(() => {
 
     window.addEventListener('scroll', onScroll)
     return () => {
@@ -70,7 +70,7 @@ export default function Home() {
       aboutTheme()
     } else if (window.scrollY > skillsRef.current.getBoundingClientRect().top && window.scrollY <  skillsRef.current.offsetTop + skillsRef.current.clientHeight / 3) {
       skillsTheme()
-    } else if (window.scrollY > projectsRef.current.getBoundingClientRect().top && window.scrollY < projectsRef.current.offsetTop + projectsRef.current.clientHeight / 3) {
+    } else if (window.scrollY > projectsRef.current.getBoundingClientRect().top && window.scrollY < projectsRef.current.offsetTop + projectsRef.current.clientHeight / 1.5) {
       projectsTheme()
     } else if (window.scrollY > contactRef.current.getBoundingClientRect().top) {
       setOne('base contactOne')
@@ -163,6 +163,7 @@ export default function Home() {
         </div>
       </div>
       <style jsx>{`
+
         .indexComponent {
             display: flex;
             flex-direction: column;
@@ -193,15 +194,15 @@ export default function Home() {
 
         .skills {
           display: flex;
-          min-height: 60vh;
-          height: 60vh;
+          min-height: 70vh;
+          height: 70vh;
           align-items: center;
         }
 
         .projects {
           display: flex;
-          min-height: 150vh;
-          height: 150vh;
+          min-height: 175vh;
+          height: 175vh;
           align-items: center;
         }
 
@@ -217,20 +218,27 @@ export default function Home() {
             position: fixed;
             z-index: 5;
             width: 100%;
-            background: #071b3a66;
-            height: 30px;
+            // background: #071b3a66;
+            // height: 30px;
         }
         
-        .navButton {
-            margin-top: 3px;
-            margin-bottom: 3px;
-            margin-left: 5px;
-            border-radius: 20px;
-            border: none;
-            font-size: .2 rem;
-            // color: #36eca7;
+        button {
+          border: 1.5px solid white;
+          border-radius: 25px;
+          background: rgb(0,0,0, 0.1);
+          backdrop-filter: blur(5px);
+          color: white;
+          padding: 5px 10px;
+          font-size: .85rem;
+          margin: 3px 5px;
         }
 
+        button:hover {
+          transition-duration: .5s; 
+          background: rgba(255, 211, 15, .6);
+        }
+
+ 
 
         @keyframes fly {
           100% {
@@ -375,8 +383,9 @@ export default function Home() {
         }
 
         .projectsTwo {
-          width: 500px;
-          height: 800px;
+          border-radius: 70%;
+          width: 400px;
+          height: 700px;
           background-color: #FDD2BF;
           bottom:-30px;
           left:-80px;

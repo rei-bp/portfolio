@@ -1,8 +1,13 @@
+
+
+
+
 export default function Skills(): any {
+
     return (
-        <div id="skills">
+        <div className="skills">
             <div className='title'>Skills</div>
-            <div className='stack'>
+            <div  className='stack'>
                 <div className='key'>Languages</div>
                 <div className='tech'>
                     <ul className='techList'>
@@ -38,43 +43,50 @@ export default function Skills(): any {
                 </div>
             </div>
             <style jsx>{`
-                .skills {
-                    width: 80%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    align-content; center;
-                    flex-flow: row wrap;
-                    margin: 0 auto;
-                }
 
                 .title {
                     font-size: 2rem;
                     font-weight: bold;
-                    margin-bottom: 1rem;
+                    margin-bottom: 3rem;
                     text-align: center;
                 }
 
                 .stack {
                     display: flex;
-                    flex-flow: row wrap;
+                    flow-direction: row;
+                    height: 8vh;
                 }
 
+                .stack:hover {
+                    transition-duration: .5s;
+                    color: #ffbf0f;
+                    border: #ffbf0f;
+                }
+
+
+
                 .key {
+                    width: 25%;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
                     align-content: center;
                     text-align: center;
-                    width: 30%;
                     font-weight: bold;
                     font-size: 1.1rem;
                     border-right: 2px solid white;
 
+
                 }
+
                 
                 .tech {
-                    margin-left: -10px;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    margin:0 0 0 -10px;
+                    height: 8vh;
                 }
 
                 .techList li {
