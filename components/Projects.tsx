@@ -1,4 +1,5 @@
 import { AiOutlineGithub } from 'react-icons/ai'
+import Image from "next/image"
 
 export default function Projects(): any {
     return (
@@ -10,10 +11,10 @@ export default function Projects(): any {
                     <a href='https://github.com/rei-bp/Viberant-server' className='techLink' target="_blank" rel="noopener noreferrer"><div className='tech'>MERN <AiOutlineGithub fontSize='1.5rem' /></div></a>
                     <div className='description'>A social meetup app built from a collabathon with a team of devs and a team of designers. My main contribution was establishing the back-end and support the front-end devs.</div>
                 </div>
-                <a href='https://admiring-spence-c2dab0.netlify.app' target="_blank" rel="noopener noreferrer"><img src='viberant.png' height='250vh' width='300vh' /></a>
+                <a href='https://admiring-spence-c2dab0.netlify.app' target="_blank" rel="noopener noreferrer"><Image src='/viberant.png' alt='viberant screenshot' height='250vh' width='300vh' /></a>
             </div>
             <div className='card'>
-            <a href='https://nba-bite.herokuapp.com' target="_blank" rel="noopener noreferrer"><img src='nbabite.png' height='250vh' width='320vh' /></a>
+            <a href='https://nba-bite.herokuapp.com' target="_blank" rel="noopener noreferrer"><Image src='/nbabite.png' alt='nba bite screen shot' height='250vh' width='320vh' /></a>
                 <div className='descriptionContainer'>
                 <a href='https://nba-bite.herokuapp.com' className='techLink' target="_blank" rel="noopener noreferrer"><div className='projectTitle'>NBA Bite!</div></a>
                     <a href='https://github.com/rei-bp/Nba-bite' className='techLink' target="_blank" rel="noopener noreferrer"><div className='tech'> Express, EJS, Postgres and TS conversion <AiOutlineGithub fontSize='1.5rem'  /></div></a>
@@ -26,7 +27,7 @@ export default function Projects(): any {
                     <a href='https://github.com/rei-bp/Magikarp-pro-tourney' className='techLink' target="_blank" rel="noopener noreferrer"><div className='tech'>HTML Canvas and JavaScript <AiOutlineGithub fontSize='1.5rem'  /></div></a>
                     <div className='description'>A front-end web based game containing animation, movement, applications and basic OOP understanding.</div>
                 </div>                
-                <a href='https://rei-bp.github.io/Magikarp-pro-tourney' target="_blank" rel="noopener noreferrer"><img className='magikarp' src='mtp.gif' height='250vh' width='300vh' /></a>
+                <a href='https://rei-bp.github.io/Magikarp-pro-tourney' target="_blank" rel="noopener noreferrer"><Image className='magikarp' alt='magikarp pro tourney screenshot' src='/mtp.gif' height='250vh' width='300vh' /></a>
             </div>
             <style jsx global>{`
 
