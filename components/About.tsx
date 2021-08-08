@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 export default function About (): any {
 
 
@@ -9,7 +9,7 @@ export default function About (): any {
                 <div className='description'>
                     <p className='content'>Hello! I go by Rei for short and my pronouns are he/him. My passion for coding started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on finding programming solutions and creating awesome stuff for the web.</p>
                 </div>
-                <img className='rei' src='rei.png' width='140px' height='140px' />
+                <Image className='rei' src='/rei.png' width='140px' height='140px' />
             </div>
             <style jsx>{`
             @keyframes fadeIn {
