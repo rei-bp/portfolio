@@ -13,8 +13,8 @@ export default function Contact (): any {
                 <a href='Reinard-Pagdilao-Resume.docx' download><button>Resume</button></a>
             </div>
             <div className='socials'>
-                <a href='https://www.linkedin.com/in/reibp/' className='icon' ><AiOutlineLinkedin fontSize='1.5rem' className='icon' /></a>
-                <a href='https://github.com/rei-bp' className='icon'><AiOutlineGithub fontSize='1.5rem'  /></a>
+                <a href='https://www.linkedin.com/in/reibp/' className='icon' target="_blank" rel="noopener noreferrer"><AiOutlineLinkedin fontSize='1.5rem' className='icon' /></a>
+                <a href='https://github.com/rei-bp' className='icon' target="_blank" rel="noopener noreferrer"><AiOutlineGithub fontSize='1.5rem'  /></a>
             </div>
             <style jsx>{`
                 span {
@@ -56,9 +56,9 @@ export default function Contact (): any {
                 
                 button {
                     align-items: center;
-                    border: 1.5px solid white;
+                    border: none;
                     border-radius: 25px;
-                    background: none;
+                    background: rgb(0,0,0, 0.3);
                     color: white;
                     padding: 5px 10px;
                     font-size: .9rem;

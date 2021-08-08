@@ -7,6 +7,7 @@ export default function Footer(): any {
         <style jsx>{`
         .footer {
             text-align: center;
+            font-size: .8rem;
         }
         `}</style>
         </div>

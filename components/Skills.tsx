@@ -52,6 +52,7 @@ export default function Skills(): any {
                 }
 
                 .stack {
+                    transition-duration: .5s;
                     display: flex;
                     flow-direction: row;
                     height: 8vh;
@@ -59,8 +60,8 @@ export default function Skills(): any {
 
                 .stack:hover {
                     transition-duration: .5s;
-                    color: #ffbf0f;
-                    border: #ffbf0f;
+                    color: rgba(255, 211, 15);
+                    border: rgba(255, 211, 15);
                 }
 
 

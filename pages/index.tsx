@@ -223,14 +223,14 @@ export default function Home() {
         }
         
         button {
-          border: 1.5px solid white;
+          border: none;
           border-radius: 25px;
-          background: rgb(0,0,0, 0.1);
+          background: rgb(0,0,0, 0.3);
           backdrop-filter: blur(5px);
           color: white;
           padding: 5px 10px;
-          font-size: .85rem;
-          margin: 3px 5px;
+          font-size: .75rem;
+          margin: 3px 2.5px;
         }
 
         button:hover {

@@ -1,7 +1,4 @@
-import Image from "next/image"
-import Viberant from '../public/viberant.png'
-import NBAbite from '../public/nbabite.png'
-import Magikarp from '../public/mtp.gif'
+import { AiOutlineGithub } from 'react-icons/ai'
 
 export default function Projects(): any {
     return (
@@ -9,29 +6,43 @@ export default function Projects(): any {
             <div className="title">Projects</div>
             <div className='card'>
                 <div className='descriptionContainer'>
-                    <div className='projectTitle'>Viberant</div>
-                    <div className='tech'>Built with MERN</div>
+                <a href='https://admiring-spence-c2dab0.netlify.app' className='techLink' target="_blank" rel="noopener noreferrer"><div className='projectTitle'>Viberant</div></a>
+                    <a href='https://github.com/rei-bp/Viberant-server' className='techLink' target="_blank" rel="noopener noreferrer"><div className='tech'>MERN <AiOutlineGithub fontSize='1.5rem' /></div></a>
                     <div className='description'>A social meetup app built from a collabathon with a team of devs and a team of designers. My main contribution was establishing the back-end and support the front-end devs.</div>
                 </div>
-                <Image className='viberant' src={Viberant} height='250vh' width='300vh' placeholder='blur' blurDataURL='viberant.png'></Image>
+                <a href='https://admiring-spence-c2dab0.netlify.app' target="_blank" rel="noopener noreferrer"><img src='viberant.png' height='250vh' width='300vh' /></a>
             </div>
             <div className='card'>
-                <Image className='viberant' src={NBAbite} height='250vh' width='320vh' placeholder='blur' blurDataURL='nbabite.png'></Image>
+            <a href='https://nba-bite.herokuapp.com' target="_blank" rel="noopener noreferrer"><img src='nbabite.png' height='250vh' width='320vh' /></a>
                 <div className='descriptionContainer'>
-                    <div className='projectTitle'>NBA-bite</div>
-                    <div className='tech'>Built with Express, EJS, and Postgres</div>
+                <a href='https://nba-bite.herokuapp.com' className='techLink' target="_blank" rel="noopener noreferrer"><div className='projectTitle'>NBA Bite!</div></a>
+                    <a href='https://github.com/rei-bp/Nba-bite' className='techLink' target="_blank" rel="noopener noreferrer"><div className='tech'> Express, EJS, Postgres and TS conversion <AiOutlineGithub fontSize='1.5rem'  /></div></a>
                     <div className='description'>NBA statistics app with CRUD capabilities that looks up players and finds their average season stats using the balldontlie API.</div>
                 </div>
             </div>
             <div className='card'>
                 <div className='descriptionContainer'>
-                    <div className='projectTitle'>Magikarp Pro Tourney</div>
-                    <div className='tech'>Built with HTML Canvas and JavaScript</div>
+                <a href='https://rei-bp.github.io/Magikarp-pro-tourney' className='techLink' target="_blank" rel="noopener noreferrer"><div className='projectTitle'>Magikarp Pro Tourney</div></a>
+                    <a href='https://github.com/rei-bp/Magikarp-pro-tourney' className='techLink' target="_blank" rel="noopener noreferrer"><div className='tech'>HTML Canvas and JavaScript <AiOutlineGithub fontSize='1.5rem'  /></div></a>
                     <div className='description'>A front-end web based game containing animation, movement, applications and basic OOP understanding.</div>
                 </div>                
-                <Image className='magikarp' src={Magikarp as any} height='250vh' width='300vh' placeholder='blur' blurDataURL='mtp.gif'></Image>
+                <a href='https://rei-bp.github.io/Magikarp-pro-tourney' target="_blank" rel="noopener noreferrer"><img className='magikarp' src='mtp.gif' height='250vh' width='300vh' /></a>
             </div>
             <style jsx global>{`
+
+                .techLink {
+                    transition-duration: .3s;
+                    color: white;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+
+                .techLink:hover {
+                    transition-duration: .5s;
+                    color: rgba(255, 211, 15);
+                }
+
+
                 .projects {
                     width: 80%;
                     display: flex;
@@ -39,7 +50,7 @@ export default function Projects(): any {
                     align-items: center;
                     align-content; center;
                     flex-flow: column wrap;
-                    margin: 5vh auto 0 auto;
+                    margin: 3vh auto 0 auto;
                 }
 
                 .title {
