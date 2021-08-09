@@ -21,6 +21,9 @@ const Footer = ():any => {
             transition-duration: .5s;
             color: rgba(255, 211, 15);
         }
+        a {
+            text-decoration: none;
+        }
         `}</style>
         </div>
     )
