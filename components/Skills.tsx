@@ -55,14 +55,12 @@ const Skills = (): any => {
                     height: 8vh;
                 }
 
-                .stack:hover {
+                .stack:hover>* {
                     transition-duration: .5s;
                     color: rgba(255, 211, 15);
-                    border: rgba(255, 211, 15);
+                    border-color: rgba(255, 211, 15);
                 }
-
-
-
+                
                 .key {
                     width: 25%;
                     display: flex;

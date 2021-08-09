@@ -42,7 +42,7 @@ const Contact = () : any => {
 
                 .me:hover {
                     transition-duration: 1s;
-                    text-shadow: 3px 5px 10px #000000;
+                    text-shadow: -10px 10px 20px #000000;
                     background: none;
                     cursor: pointer;
                 }
