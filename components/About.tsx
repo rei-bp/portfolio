@@ -1,10 +1,10 @@
 import Image from "next/image"
-const About = (): any => {
+const About = (props: any): any => {
 
 
     return (
         <div className='about'>
-            <div className='title'>About Me</div>
+            <div className={props.scroll} >About Me</div>
             <div className='container'>
                 <div className='description'>
                     <p className='content'>Hello! My full name is <span className='me'>Reinard Pagdilao or Rei</span> for short and my pronouns are he/him. My passion for coding started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on <span className='me'>finding programming solutions</span> and <span className='me'>creating awesome stuff for the web.</span></p>
@@ -35,10 +35,16 @@ const About = (): any => {
             }
 
             .title {
+                transition-duration: .5s;
                 font-size: 3rem;
                 width: 80%;
                 margin: 0 auto 3rem auto;
                 text-align: center;
+            }
+
+            .scrollTitle {
+                transition-duration: 2s;
+                color: rgba(255, 211, 15);
             }
 
             .description {

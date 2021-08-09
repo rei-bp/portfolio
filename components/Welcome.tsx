@@ -18,6 +18,8 @@ const Welcome = (): any => {
                 .name {
                     font-size: 3rem;
                     font-weight: bold;
+                    color: rgba(255, 211, 15);
+                    }
                 }
 
                 .pronoun {

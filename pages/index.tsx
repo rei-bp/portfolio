@@ -19,6 +19,10 @@ export default function Home() {
   const [three, setThree] = useState<string>('base three')
   const [bg, setBg] = useState<string>('background bg')
 
+  const [scrollAbout,setScrollAbout] = useState<string>('title')
+  const [scrollSkills,setScrollSkills] = useState<string>('title')
+  const [scrollProjects,setScrollProjects] = useState<string>('title')
+
   const [aboutNav,setAboutNav] = useState<string>('navButton')
   const [skillsNav,setSkillsNav] = useState<string>('navButton')
   const [projectsNav,setProjectsNav] = useState<string>('navButton')
@@ -70,6 +74,9 @@ export default function Home() {
     setSkillsNav('navButton')
     setProjectsNav('navButton')
     setContactNav('navButton')
+    setScrollAbout('title scrollTitle')
+    setScrollSkills('title')
+    setScrollProjects('title')
   }
 
   function skillsTheme(): void {
@@ -81,6 +88,9 @@ export default function Home() {
     setSkillsNav('navButton highlight')
     setProjectsNav('navButton')
     setContactNav('navButton')
+    setScrollAbout('title')
+    setScrollSkills('title scrollTitle')
+    setScrollProjects('title')
   }
 
   function projectsTheme(): void {
@@ -92,6 +102,9 @@ export default function Home() {
     setSkillsNav('navButton')
     setProjectsNav('navButton highlight')
     setContactNav('navButton')
+    setScrollAbout('title')
+    setScrollSkills('title')
+    setScrollProjects('title scrollTitle')
   }
 
   function contactTheme(): void {
@@ -192,13 +205,13 @@ export default function Home() {
           <Welcome />
         </div>
         <div ref={aboutRef} className="about">
-          <About /> 
+          <About scroll={scrollAbout} /> 
         </div>
         <div ref={skillsRef} className="skills">
-          <Skills />
+          <Skills scroll={scrollSkills}/>
         </div>
         <div ref={projectsRef} className="projects">
-          <Projects />
+          <Projects scroll={scrollProjects} />
         </div>
         <div ref={contactRef} className="contact">
           <Contact />

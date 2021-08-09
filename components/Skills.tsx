@@ -1,9 +1,9 @@
 
-const Skills = (): any => {
+const Skills = (props: any): any => {
 
     return (
         <div className="skills">
-            <div className='title'>Skills</div>
+            <div className={props.scroll}>Skills</div>
             <div  className='stack'>
                 <div className='key'>Languages</div>
                 <div className='tech'>
@@ -42,10 +42,16 @@ const Skills = (): any => {
             <style jsx>{`
 
                 .title {
+                    transition-duration: .5s;
                     font-size: 3rem;
                     font-weight: bold;
                     margin-bottom: 3rem;
                     text-align: center;
+                }
+
+                .scrollTitle {
+                    transition-duration: 2s;
+                    color: rgba(255, 211, 15);
                 }
 
                 .stack {

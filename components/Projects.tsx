@@ -1,10 +1,10 @@
 import { AiOutlineGithub } from 'react-icons/ai'
 import Image from "next/image"
 
-const Projects = (): any => {
+const Projects = (props: any): any => {
     return (
         <div className="projects">
-            <div className="title">Projects</div>
+            <div className={props.scroll}>Projects</div>
             <div className='card'>
                 <div className='descriptionContainer'>
                     <a href='https://admiring-spence-c2dab0.netlify.app' className='techLink' target="_blank" rel="noopener noreferrer">
@@ -86,10 +86,16 @@ const Projects = (): any => {
                 }
 
                 .title {
+                    transition-duration: .5s;
                     font-size: 3rem;
                     font-weight: bold;
                     margin-bottom: 2rem;
                     text-align: center;
+                }
+
+                .scrollTitle {
+                    transition-duration: 2s;
+                    color: rgba(255, 211, 15);
                 }
 
                 .card {
