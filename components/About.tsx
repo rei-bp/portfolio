@@ -7,7 +7,7 @@ const About = (): any => {
             <div className='title'>About Me</div>
             <div className='container'>
                 <div className='description'>
-                    <p className='content'>Hello! I go by Rei for short and my pronouns are he/him. My passion for coding started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on finding programming solutions and creating awesome stuff for the web.</p>
+                    <p className='content'>Hello! My full name is <span className='me'>Reinard Pagdilao or Rei</span> for short and my pronouns are he/him. My passion for coding started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on <span className='me'>finding programming solutions</span> and <span className='me'>creating awesome stuff for the web.</span></p>
                 </div>
                 <Image className='rei' src='/rei.png' alt='rei' width='170vh' height='170vh' />
             </div>
@@ -17,6 +17,9 @@ const About = (): any => {
                 100% {opacity: 1;}
             }
 
+            .me {
+                font-weight: bold;
+            }
             .about {
                 width: 60%;
                 margin: 0 auto;
@@ -39,7 +42,7 @@ const About = (): any => {
             }
 
             .description {
-                width: 65%;
+                width: 70%;
                 margin: auto 10px auto 0;
             }
 
