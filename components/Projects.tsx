@@ -53,11 +53,11 @@ const Projects = (props: any): any => {
                             HTML Canvas and JavaScript <AiOutlineGithub fontSize='1.5rem'  />
                         </div>
                     </a>
-                    <div className='description'>A front-end web based game containing animation, movement, applications and basic OOP understanding.
+                    <div className='description'>A front-end web based game containing animation, movement, applications and basic OOP understanding. (Picture might take a bit of time to load)
                     </div>
                 </div>                
                 <a href='https://rei-bp.github.io/Magikarp-pro-tourney' target="_blank" rel="noopener noreferrer">
-                    <Image className='magikarp' alt='magikarp pro tourney screenshot' src='/mtp.gif' height='320vh' width='450vh' />
+                    <Image className='magikarp' alt='magikarp pro tourney screenshot' src='/mtp.gif' height='320vh' width='450vh' placeholder='blur' blurDataURL='mtp.gif'/>
                 </a>
             </div>
             <style jsx global>{`
