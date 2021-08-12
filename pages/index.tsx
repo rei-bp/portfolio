@@ -302,19 +302,6 @@ export default function Home() {
           background: rgba(255, 211, 15, .6);
         }
 
- 
-
-        @keyframes fly {
-          100% {
-            transform:rotate(1turn) translate(100px) rotate(-1turn);
-          }
-        }
-        
-        @keyframes flyPlus {
-          100% {
-            transform:rotate(-1turn) translate(100px) rotate(1turn);
-          }
-        }
 
         .background {
           width: 100%;
@@ -344,9 +331,27 @@ export default function Home() {
           background: #6e304b;
         }
 
+        @keyframes rotate {
+          100% {
+            transform:rotate(1turn) translate(15vh) rotate(-1turn);
+          }
+        }
+        
+        @keyframes rotatePlus {
+          100% {
+            transform:rotate(1turn) translate(20vh) rotate(-1turn);
+          }
+        }
+
+        @keyframes rotatePlusPlus {
+          100% {
+            transform:rotate(-1turn) translate(15vh) rotate(1turn);
+          }
+        }
+
         .base {
           position: absolute;
-          filter: blur(10vh);
+          // filter: blur(10vh);
           opacity: .8;
         }
 
@@ -356,10 +361,35 @@ export default function Home() {
           height: 80vh;
           background-color: #373372;
           top:-20vh;
-          left: 80vh;
+          left: 50vh;
           z-index: 3;
-          animation: fly 10s linear infinite;
-          transform:rotate(0) translate(5vh) rotate(0);
+          animation: rotate 15s linear infinite;
+          transform:rotate(0) translate(15vh) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .two {
+          border-radius: 70%;
+          width: 80vh;
+          height: 100vh;
+          background-color: #7C336C;
+          bottom:2vh;
+          left:-2vh;
+          transition-duration: 1s;
+          animation: rotatePlusPlus 20s linear infinite;
+          transform:rotate(0) translate(15vh) rotate(0);
+        }
+
+        .three {
+          border-radius: 100%;
+          width: 40vh;
+          height: 40vh;
+          bottom: 8vh;
+          left: 2vh;
+          opacity: .4;
+          background-color: #B3588A;
+          animation: rotatePlus 30s linear infinite;
+          transform:rotate(0) translate(20vh) rotate(0);
           transition-duration: 1s;
         }
 
@@ -368,11 +398,36 @@ export default function Home() {
           width: 80vh;
           height: 80vh;
           background-color: #474c4e;
-          top:-20vh;
-          left: 80vh;
+          bottom:-10vh;
+          right: 40vh;
           z-index: 3;
-          animation: fly 10s linear infinite;
-          transform:rotate(0) translate(80px) rotate(0);
+          animation: rotate 10s linear infinite;
+          transform:rotate(0) translate(15vh) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .aboutTwo {
+          border-radius: 70%;
+          width: 50vh;
+          height: 50vh;
+          background-color: #55827b;
+          top:-30px;
+          left:-80px;
+          transition-duration: 1s;
+          animation: rotatePlus 30s linear infinite;
+          transform:rotate(0) translate(20vh) rotate(0);
+        }
+
+        .aboutThree {
+          border-radius: 100%;
+          width: 50vh;
+          height: 50vh;
+          top:10vh;
+          right:-10vh;
+          opacity: .8;
+          background-color: #92ACA0;
+          animation: rotatePlus 30s linear infinite;
+          transform:rotate(0) translate(15vh) rotate(0);
           transition-duration: 1s;
         }
 
@@ -380,12 +435,37 @@ export default function Home() {
           border-radius: 100%;
           width: 80vh;
           height: 80vh;
-          background-color: #9E5758;
+          background-color: #d14446;
           top:-20vh;
-          left: 80vh;
+          left: 50vh;
           z-index: 3;
-          animation: fly 10s linear infinite;
-          transform:rotate(0) translate(80px) rotate(0);
+          animation: rotate 10s linear infinite;
+          transform:rotate(0) translate(15vh) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .skillsTwo {
+          border-radius: 100%;
+          width: 60vh;
+          height: 60vh;
+          background-color: #183B5B;
+          top:-10px;
+          left:-80px;
+          transition-duration: 1s;
+          animation: rotatePlusPlus 20s linear infinite;
+          transform:rotate(0) translate(15vh) rotate(0);
+        }
+
+        .skillsThree {
+          border-radius: 100%;
+          width: 40vh;
+          height: 40vh;
+          bottom: 5vh;
+          left:20vh;
+          opacity: .5;
+          background-color: #2D99A5;
+          animation: rotatePlus 18s linear infinite;
+          transform:rotate(0) translate(20vh) rotate(0);
           transition-duration: 1s;
         }
 
@@ -397,54 +477,9 @@ export default function Home() {
           top:-20vh;
           left: 80vh;
           z-index: 3;
-          animation: fly 10s linear infinite;
+          animation: rotate 10s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
-        }
-
-        .contactOne {
-          border-radius: 100%;
-          width: 80vh;
-          height: 80vh;
-          background-color: #6e304b;
-          top:-20vh;
-          left: 80vh;
-          z-index: 3;
-          animation: fly 10s linear infinite;
-          transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: 1s;
-        }
-        
-        .two {
-          border-radius: 70%;
-          width: 80vh;
-          height: 100vh;
-          background-color: #7C336C;
-          bottom:-30px;
-          left:-80px;
-          transition-duration: 1s;
-          transform:rotate(0) translate(80px) rotate(0);
-        }
-
-        .aboutTwo {
-          border-radius: 70%;
-          width: 500px;
-          height: 800px;
-          background-color: #92ACA0;
-          bottom:-30px;
-          left:-80px;
-          transition-duration: 1s;
-          transform:rotate(0) translate(80px) rotate(0);
-        }
-
-        .skillsTwo {
-          width: 500px;
-          height: 800px;
-          background-color: #183B5B;
-          bottom:-30px;
-          left:-80px;
-          transition-duration: 1s;
-          transform:rotate(0) translate(80px) rotate(0);
         }
 
         .projectsTwo {
@@ -458,55 +493,6 @@ export default function Home() {
           transform:rotate(0) translate(80px) rotate(0);
         }
 
-        .contactTwo {
-          width: 500px;
-          height: 800px;
-          background-color: #a37c82;;
-          bottom:-30px;
-          left:-80px;
-          transition-duration: 1s;
-          transform:rotate(0) translate(80px) rotate(0);
-        }
-        
-        .three {
-          border-radius: 100%;
-          width: 500px;
-          height: 500px;
-          bottom:10px;
-          right:-50px;
-          opacity: .4;
-          background-color: #B3588A;
-          animation: flyPlus 18s linear infinite;
-          transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: 1s;
-        }
-
-        .aboutThree {
-          border-radius: 100%;
-          width: 500px;
-          height: 500px;
-          bottom:10px;
-          right:-50px;
-          opacity: .8;
-          background-color: #55827b;
-          animation: flyPlus 18s linear infinite;
-          transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: 1s;
-        }
-
-        .skillsThree {
-          border-radius: 100%;
-          width: 500px;
-          height: 500px;
-          bottom:10px;
-          right:-50px;
-          opacity: .5;
-          background-color: #2D99A5;
-          animation: flyPlus 18s linear infinite;
-          transform:rotate(0) translate(80px) rotate(0);
-          transition-duration: 1s;
-        }
-
         .projectsThree {
           border-radius: 100%;
           width: 500px;
@@ -515,9 +501,32 @@ export default function Home() {
           right:-50px;
           opacity: .9;
           background-color: #DF5E5E;
-          animation: flyPlus 18s linear infinite;
+          animation: rotatePlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
+        }
+
+        .contactOne {
+          border-radius: 100%;
+          width: 80vh;
+          height: 80vh;
+          background-color: #6e304b;
+          top:-20vh;
+          left: 80vh;
+          z-index: 3;
+          animation: rotate 10s linear infinite;
+          transform:rotate(0) translate(80px) rotate(0);
+          transition-duration: 1s;
+        }
+
+        .contactTwo {
+          width: 500px;
+          height: 800px;
+          background-color: #a37c82;;
+          bottom:-30px;
+          left:-80px;
+          transition-duration: 1s;
+          transform:rotate(0) translate(80px) rotate(0);
         }
 
         .contactThree {
@@ -528,7 +537,7 @@ export default function Home() {
           right:-50px;
           opacity: .8;
           background-color: #b36f8c;
-          animation: flyPlus 18s linear infinite;
+          animation: rotatePlus 18s linear infinite;
           transform:rotate(0) translate(80px) rotate(0);
           transition-duration: 1s;
         }
