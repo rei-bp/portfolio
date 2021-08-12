@@ -21,14 +21,18 @@ const Projects = (props: any): any => {
                         A social meetup app built from a collabathon with a team of devs and a team of designers. My main contribution was establishing the back-end and support the front-end devs.
                     </div>
                 </div>
-                <a href='https://admiring-spence-c2dab0.netlify.app' target="_blank" rel="noopener noreferrer">
-                    <Image src='/viberant.png' alt='viberant screenshot' height='320vh' width='420vh' />
-                </a>
+                <div className='ssContainer'>
+                    <a href='https://admiring-spence-c2dab0.netlify.app' target="_blank" rel="noopener noreferrer">
+                        <Image src='/viberant.png' alt='viberant screenshot' height='400vh' width='500vh' />
+                    </a>
+                </div>
             </div>
             <div className='card'>
-                <a href='https://nba-bite.herokuapp.com' target="_blank" rel="noopener noreferrer">
-                    <Image src='/nbabite.png' alt='nba bite screen shot' height='320vh' width='450vh' />
-                </a>
+                <div className='ssContainer'>
+                    <a href='https://nba-bite.herokuapp.com' target="_blank" rel="noopener noreferrer">
+                        <Image src='/nbabite.png' alt='nba bite screen shot' height='400rem' width='500rem' />
+                    </a>
+                </div>
                 <div className='descriptionContainer'>
                     <a href='https://nba-bite.herokuapp.com' className='techLink' target="_blank" rel="noopener noreferrer">
                         <div className='projectTitle'>NBA Bite!</div>
@@ -55,10 +59,12 @@ const Projects = (props: any): any => {
                     </a>
                     <div className='description'>A front-end web based game containing animation, movement, applications and basic OOP understanding. (Picture might take a bit of time to load)
                     </div>
-                </div>                
-                <a href='https://rei-bp.github.io/Magikarp-pro-tourney' target="_blank" rel="noopener noreferrer">
-                    <Image className='magikarp' alt='magikarp pro tourney screenshot' src='/mtp.gif' height='320vh' width='450vh' placeholder='blur' blurDataURL='mtp.gif'/>
-                </a>
+                </div>
+                <div className='ssContainer'>                
+                    <a href='https://rei-bp.github.io/Magikarp-pro-tourney' target="_blank" rel="noopener noreferrer">
+                        <Image className='magikarp' alt='magikarp pro tourney screenshot' src='/mtp.gif' height='400rem' width='500rem' placeholder='blur' blurDataURL='mtp.gif'/>
+                    </a>
+                </div>
             </div>
             <style jsx global>{`
 
@@ -111,8 +117,8 @@ const Projects = (props: any): any => {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    width: 30%;
-                    max-width: 30%;
+                    width: 20rem;
+                    max-width: 20rem;
                     padding: 0 20px;
                 }
 
@@ -129,7 +135,10 @@ const Projects = (props: any): any => {
                     margin-bottom: 25px;
                 }
 
-                .description {
+                .ssContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 .magikarp {

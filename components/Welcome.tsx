@@ -2,8 +2,8 @@ const Welcome = (): any => {
     return (
         <div className='welcome'>
             <p className='intro'>Welcome, my name is</p>
-            <p className='nameBox'><span className='name'>Rei Pagdilao</span></p>
-            <p className='brand'>I'm a software engineer who builds enjoyable web applications while providing clean, concise, scalable and readable code. </p>
+            <p className='nameBox'><span className='name emphasis'>Rei Pagdilao</span></p>
+            <p className='brand'>I'm a <span className='emphasis'>software engineer</span> who builds enjoyable web applications while providing clean, concise, scalable and readable code. </p>
             <style jsx>{`
                 .welcome {
                     text-align: center;
@@ -17,9 +17,12 @@ const Welcome = (): any => {
 
                 .name {
                     font-size: 3rem;
+                    }
+                }
+
+                .emphasis {
                     font-weight: bold;
                     color: rgba(255, 211, 15);
-                    }
                 }
 
                 .pronoun {

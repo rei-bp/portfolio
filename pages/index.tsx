@@ -32,23 +32,23 @@ export default function Home() {
   
   
   //ref
-  const aboutRef: any = useRef()
-  const aboutNavRef: any =useRef()
+  const aboutRef : any = useRef<HTMLElement | null>(null)
+  const aboutNavRef: any =useRef<HTMLDivElement | null>(null)
 
-  const skillsRef: any = useRef()
-  const skillsNavRef: any = useRef()
+  const skillsRef: any = useRef<HTMLDivElement | null>(null)
+  const skillsNavRef: any = useRef<HTMLDivElement | null>(null)
 
-  const projectsRef: any = useRef()
-  const projectsNavRef: any = useRef()
+  const projectsRef: any = useRef<HTMLDivElement | null>(null)
+  const projectsNavRef: any = useRef<HTMLDivElement | null>(null)
 
-  const contactRef: any = useRef()
-  const contactNavRef: any = useRef()
+  const contactRef: any = useRef<HTMLDivElement | null>(null)
+  const contactNavRef: any = useRef<HTMLDivElement | null>(null)
   
-  const footerRef: any = useRef()
+  const footerRef: any = useRef<HTMLDivElement | null>(null)
   
 
   useEffect(() => {
-
+    const node = aboutRef.current
     window.addEventListener('scroll', onScroll)
     return () => {
       window.removeEventListener('scroll', onScroll)

@@ -7,7 +7,7 @@ const About = (props: any): any => {
             <div className={props.scroll} >About Me</div>
             <div className='container'>
                 <div className='description'>
-                    <p className='content'>Hello! My full name is <span className='me'>Reinard Pagdilao or Rei</span> for short and my pronouns are he/him. My passion for coding started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on <span className='me'>finding programming solutions</span> and <span className='me'>creating awesome stuff for the web.</span></p>
+                    <p className='content'>Hello! My full name is <span className='me'>Reinard Pagdilao or Rei</span> for short and my pronouns are he/him. My <span className='me'>passion for coding</span> started with the pc enthusiast in me and naturally became curious about the software side of things. One thing lead to another and now I'm hooked on <span className='me goal'>finding programming solutions</span> and <span className='me goal'>creating awesome stuff for the web.</span></p>
                 </div>
                 <Image className='rei' src='/rei.png' alt='rei' width='170vh' height='170vh' />
             </div>
@@ -19,7 +19,13 @@ const About = (props: any): any => {
 
             .me {
                 font-weight: bold;
+                color: rgba(255, 211, 15);
             }
+
+            .goal {
+                color: white;
+            }
+
             .about {
                 width: 60%;
                 margin: 0 auto;
