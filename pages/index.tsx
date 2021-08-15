@@ -366,35 +366,35 @@ export default function Home() {
           width: 80vh;
           height: 80vh;
           background-color: #373372;
-          top:-10vh;
-          right: 10vh;
+          right: 15vh;
           z-index: 3;
           transition-duration: 1s;
-          animation: rotate 15s linear infinite;
+          animation: rotate 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .two {
-          border-radius: 70%;
-          width: 80vh;
+          border-radius: 100%;
+          width: 100vh;
           height: 100vh;
           background-color: #7C336C;
           bottom:2vh;
-          left:-2vh;
+          left:15vh;
           transition-duration: 1s;
-          animation: rotatePlusPlus 20s linear infinite;
+          animation: rotatePlusPlus 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .three {
           border-radius: 100%;
+          z-index: 4;
           width: 40vh;
           height: 40vh;
           bottom: 8vh;
           left: 70vh;
           opacity: .4;
           background-color: #B3588A;
-          animation: rotatePlus 30s linear infinite;
+          animation: rotatePlus 10s linear infinite;
           transform:rotate(0) translate(20vh) rotate(0);
           transition-duration: 1s;
         }
@@ -403,36 +403,36 @@ export default function Home() {
           border-radius: 100%;
           width: 80vh;
           height: 80vh;
-          background-color: #92ACA0;
-          top:-10vh;
-          right: 10vh;
+          background-color:#92ACA0;
+          right: 15vh;
           z-index: 3;
           transition-duration: 1s;
-          animation: rotate 15s linear infinite;
+          animation: rotate 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .aboutTwo {
-          border-radius: 70%;
-          width: 80vh;
+          border-radius: 100%;
+          width: 100vh;
           height: 100vh;
           background-color: #55827b;
           bottom:2vh;
-          left:-2vh;
+          left:15vh;
           transition-duration: 1s;
-          animation: rotatePlusPlus 20s linear infinite;
+          animation: rotatePlusPlus 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .aboutThree {
           border-radius: 100%;
+          z-index: 4;
           width: 40vh;
           height: 40vh;
           bottom: 8vh;
           left: 70vh;
           opacity: .4;
           background-color: #474c4e;
-          animation: rotatePlus 30s linear infinite;
+          animation: rotatePlus 10s linear infinite;
           transform:rotate(0) translate(20vh) rotate(0);
           transition-duration: 1s;
         }
@@ -442,35 +442,35 @@ export default function Home() {
           width: 80vh;
           height: 80vh;
           background-color: #d14446;
-          top:-10vh;
-          right: 10vh;
+          right: 15vh;
           z-index: 3;
           transition-duration: 1s;
-          animation: rotate 15s linear infinite;
+          animation: rotate 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .skillsTwo {
-          border-radius: 70%;
-          width: 80vh;
+          border-radius: 100%;
+          width: 100vh;
           height: 100vh;
           background-color: #183B5B;
           bottom:2vh;
-          left:-2vh;
+          left:15vh;
           transition-duration: 1s;
-          animation: rotatePlusPlus 20s linear infinite;
+          animation: rotatePlusPlus 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .skillsThree {
           border-radius: 100%;
+          z-index: 4;
           width: 40vh;
           height: 40vh;
           bottom: 8vh;
           left: 70vh;
           opacity: .4;
           background-color: #2D99A5;
-          animation: rotatePlus 30s linear infinite;
+          animation: rotatePlus 10s linear infinite;
           transform:rotate(0) translate(20vh) rotate(0);
           transition-duration: 1s;
         }
@@ -480,23 +480,22 @@ export default function Home() {
           width: 80vh;
           height: 80vh;
           background-color: #c09869;
-          top:-10vh;
-          right: 10vh;
+          right: 15vh;
           z-index: 3;
           transition-duration: 1s;
-          animation: rotate 15s linear infinite;
+          animation: rotate 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .projectsTwo {
-          border-radius: 70%;
-          width: 80vh;
+          border-radius: 100%;
+          width: 100vh;
           height: 100vh;
           background-color: #FDD2BF;
           bottom:2vh;
-          left:-2vh;
+          left:15vh;
           transition-duration: 1s;
-          animation: rotatePlusPlus 20s linear infinite;
+          animation: rotatePlusPlus 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
@@ -517,38 +516,37 @@ export default function Home() {
           border-radius: 100%;
           width: 80vh;
           height: 80vh;
-          background-color: #6e304b;
-          top:-10vh;
-          right: 10vh;
+          background-color: #af6082;
+          right: 15vh;
           z-index: 3;
           transition-duration: 1s;
-          animation: rotate 15s linear infinite;
+          animation: rotate 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .contactTwo {
-          border-radius: 70%;
-          width: 80vh;
+          border-radius: 100%;
+          width: 100vh;
           height: 100vh;
           background-color: #a37c82;
           bottom:2vh;
-          left:-2vh;
+          left:15vh;
           transition-duration: 1s;
-          animation: rotatePlusPlus 20s linear infinite;
+          animation: rotatePlusPlus 8s linear infinite;
           transform:rotate(0) translate(10vh) rotate(0);
         }
 
         .contactThree {
           border-radius: 100%;
+          z-index: 4;
           width: 40vh;
           height: 40vh;
           bottom: 8vh;
           left: 70vh;
           opacity: .4;
           background-color: #b36f8c;
-          animation: rotatePlus 30s linear infinite;
+          animation: rotatePlus 10s linear infinite;
           transform:rotate(0) translate(20vh) rotate(0);
-          transition-duration: 1s;
         }
       `}</style>
     </div>
