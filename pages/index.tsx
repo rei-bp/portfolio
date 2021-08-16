@@ -357,7 +357,7 @@ export default function Home() {
 
         .base {
           position: absolute;
-          filter: blur(10vh);
+          filter: blur(8vh);
           opacity: .8;
         }
 
@@ -479,7 +479,7 @@ export default function Home() {
           border-radius: 100%;
           width: 80vh;
           height: 80vh;
-          background-color: #c09869;
+          background-color: #FDD2BF;
           right: 15vh;
           z-index: 3;
           transition-duration: 1s;
@@ -491,7 +491,7 @@ export default function Home() {
           border-radius: 100%;
           width: 100vh;
           height: 100vh;
-          background-color: #FDD2BF;
+          background-color: #c09869;
           bottom:2vh;
           left:15vh;
           transition-duration: 1s;

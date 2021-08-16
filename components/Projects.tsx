@@ -14,7 +14,7 @@ const Projects = (props: any): any => {
                     </a>
                     <a href='https://github.com/rei-bp/Viberant-server' className='techLink' target="_blank" rel="noopener noreferrer">
                         <div className='tech'>
-                            MERN <AiOutlineGithub fontSize='1.5rem' />
+                            MongoDB, Express, React, and Node (MERN) <AiOutlineGithub fontSize='1.5rem' />
                         </div>
                     </a>
                     <div className='description'>
