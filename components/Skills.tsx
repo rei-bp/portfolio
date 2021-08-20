@@ -11,8 +11,8 @@ const Skills = (props: any): any => {
                         <li>JavaScript</li>
                         <li>TypeScript</li>
                         <li>Python</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
                     </ul>
                 </div>
             </div>
@@ -20,10 +20,10 @@ const Skills = (props: any): any => {
                 <div className='key'>Libraries & Frameworks</div>
                 <div className='tech'>
                     <ul className='techList'>
-                        <li>React</li>
+                        <li>React.js</li>
                         <li>Next.js</li>
-                        <li>Express</li>
-                        <li>Node</li>
+                        <li>Express.js</li>
+                        <li>Node.js</li>
                         <li>EJS</li>
                         <li>Tailwind CSS</li>
                         <li>BootStrap</li>
@@ -35,7 +35,7 @@ const Skills = (props: any): any => {
                 <div className='tech'>
                     <ul className='techList'>
                         <li>MongoDB/Mongoose</li>
-                        <li>PostgresSQL/Sequelize</li>
+                        <li>PostgreSQL/Sequelize</li>
                     </ul>
                 </div>
             </div>
@@ -77,12 +77,11 @@ const Skills = (props: any): any => {
                     font-weight: bold;
                     font-size: 1.1rem;
                     border-right: 2px solid white;
-
-
                 }
 
                 
                 .tech {
+                    width: 75%;
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;

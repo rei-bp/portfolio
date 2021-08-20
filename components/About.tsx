@@ -65,7 +65,7 @@ const About = (props: any): any => {
                 max-height: 150px;
             }
 
-            @media screen and (max-width: 640px) {
+            @media screen and (max-width: 900px) {
                 .about {
                     width: 100%;
                     padding: 0 1rem;

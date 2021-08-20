@@ -25,7 +25,7 @@ const Contact = () : any => {
                 <a href='Reinard-Pagdilao-Resume.pdf'><button>Resume</button></a>
             </div>
             <div className='socials'>
-                <a href='https://www.linkedin.com/in/reibp/' className='icon' target="_blank" rel="noopener noreferrer"><AiOutlineLinkedin fontSize='1.5rem' className='icon' /></a>
+                <a href='https://www.linkedin.com/in/reibp' className='icon' target="_blank" rel="noopener noreferrer"><AiOutlineLinkedin fontSize='1.5rem' className='icon' /></a>
                 <a href='https://github.com/rei-bp' className='icon' target="_blank" rel="noopener noreferrer"><AiOutlineGithub fontSize='1.5rem'  /></a>
             </div>
             <style jsx>{`
