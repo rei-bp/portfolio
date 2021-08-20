@@ -120,7 +120,13 @@ const Contact = () : any => {
                     }
 
                     .description {
-                        width: 100%;
+                        width: 90%;
+                    }
+                }
+
+                @media screen and (max-width: 540px) {
+                    .title, .me {
+                        font-size: 2rem;
                     }
                 }
                 

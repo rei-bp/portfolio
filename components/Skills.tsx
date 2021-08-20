@@ -113,6 +113,26 @@ const Skills = (props: any): any => {
                     }
                 }
 
+                @media screen and (max-width: 640px) {
+                    .stack {
+                        display: flex;
+                        flex-direction: column;
+                        height: 15vh;
+                    }
+
+                    .tech {
+                        margin: 1rem auto;
+                        width: 100%;
+                    }
+
+                    .key {
+                        width: 100%;
+                        border: none;
+                        text-decoration: solid underline white 2px;
+                        text-underline-offset: .5rem;
+                    }
+                }
+
 
             `}</style>
         </div>
