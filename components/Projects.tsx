@@ -100,7 +100,7 @@ const Projects = (props: any): any => {
                 }
 
                 .scrollTitle {
-                    transition-duration: 2s;
+                    transition-duration: 1s;
                     color: rgba(255, 211, 15);
                 }
 
@@ -158,6 +158,10 @@ const Projects = (props: any): any => {
                         max-width: 100%;
                         text-align: center;
                         margin-bottom: 1rem;
+                    }
+
+                    .projectTitle {
+                        color: rgba(255, 211, 15);
                     }
                 }
                     

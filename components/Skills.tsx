@@ -50,7 +50,7 @@ const Skills = (props: any): any => {
                 }
 
                 .scrollTitle {
-                    transition-duration: 2s;
+                    transition-duration: 1s;
                     color: rgba(255, 211, 15);
                 }
 
@@ -91,13 +91,28 @@ const Skills = (props: any): any => {
                     height: 8vh;
                 }
 
+                .techList {
+                    display : flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
                 .techList li {
                     display: inline;
                     margin-right: 15px;
                 }
 
+                @media screen and (max-width: 900px) {
 
-                
+                    .stack {
+                        padding: auto 1rem;
+                    }
+
+                    .key {
+                        color: rgba(255, 211, 15);
+                    }
+                }
+
 
             `}</style>
         </div>

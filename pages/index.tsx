@@ -236,9 +236,18 @@ export default function Home() {
           color: #ffffff;
         }
 
-        @media screen and (max-width: 640px) {
-          .index {
-            padding: 0;
+        @media screen and (max-width: 900px) {
+
+          .projects {
+            margin: 60vh auto;
+          }
+
+          .about {
+            margin: 10vh auto;
+          }
+
+          .skills {
+            margin: 10vh auto;
           }
         }
 
@@ -485,7 +494,7 @@ export default function Home() {
           border-radius: 100%;
           width: 80vh;
           height: 80vh;
-          background-color: #FDD2BF;
+          background-color: #fabda2;
           right: 15vh;
           z-index: 3;
           transition-duration: 1s;

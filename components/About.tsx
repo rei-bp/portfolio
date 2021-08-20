@@ -50,7 +50,7 @@ const About = (props: any): any => {
             }
 
             .scrollTitle {
-                transition-duration: 2s;
+                transition-duration: 1s;
                 color: rgba(255, 211, 15);
             }
 

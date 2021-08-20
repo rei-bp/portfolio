@@ -33,6 +33,17 @@ const Welcome = (): any => {
                     margin: 0 auto;
                     width: 80%;
                 }
+
+                @media screen and (max-width: 900px) {
+
+                    .welcome {
+                        width: 100%;
+                    }
+
+                    .brand {
+                        width: 100%;
+                    }
+                }
             `}</style>
         </div>
     )
