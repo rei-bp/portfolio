@@ -117,7 +117,7 @@ const Skills = (props: any): any => {
                     .stack {
                         display: flex;
                         flex-direction: column;
-                        height: 15vh;
+                        margin-bottom: 4rem;
                     }
 
                     .tech {

@@ -239,7 +239,7 @@ export default function Home() {
         @media screen and (max-width: 900px) {
 
           .projects {
-            margin: 60vh auto;
+            margin: 75vh auto;
           }
 
           .about {
@@ -247,7 +247,7 @@ export default function Home() {
           }
 
           .skills {
-            margin: 10vh auto;
+            margin: 30vh auto;
           }
         }
 
