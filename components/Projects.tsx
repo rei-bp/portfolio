@@ -113,7 +113,6 @@ const Projects = (props: any): any => {
                 }
 
                 .descriptionContainer {
-
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -143,6 +142,23 @@ const Projects = (props: any): any => {
 
                 .magikarp {
                     border-radius: 25px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    .projects {
+                        width: 100%;
+                    }
+
+                    .card {
+                        flex-direction: column;
+                    }
+
+                    .descriptionContainer {
+                        width: 100%;
+                        max-width: 100%;
+                        text-align: center;
+                        margin-bottom: 1rem;
+                    }
                 }
                     
             `}</style>

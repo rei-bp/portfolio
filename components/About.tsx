@@ -69,6 +69,7 @@ const About = (props: any): any => {
                 .about {
                     width: 100%;
                     padding: 0 1rem;
+                    text-align: center;
                 }
 
                 .container {

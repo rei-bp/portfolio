@@ -113,6 +113,16 @@ const Contact = () : any => {
                     transition-duration: .5s;
                     color: rgba(255, 211, 15);
                 }
+
+                @media screen and (max-width: 900px) {
+                    .contact {
+                        width: 100%;
+                    }
+
+                    .description {
+                        width: 100%;
+                    }
+                }
                 
                 `}</style>
         </div>
