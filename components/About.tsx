@@ -30,6 +30,7 @@ const About = (props: any): any => {
                 width: 60%;
                 margin: 0 auto;
             }
+
             .container {
                 width: 80%;
                 display: flex;
@@ -62,6 +63,24 @@ const About = (props: any): any => {
                 padding-left: 15px;
                 max-width: 150px;
                 max-height: 150px;
+            }
+
+            @media screen and (max-width: 640px) {
+                .about {
+                    width: 100%;
+                    padding: 0 1rem;
+                }
+
+                .container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .description {
+                    width: 100%;
+                    margin: 0 auto;
+                }                
             }
             
 

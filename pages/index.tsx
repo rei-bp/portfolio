@@ -236,6 +236,12 @@ export default function Home() {
           color: #ffffff;
         }
 
+        @media screen and (max-width: 640px) {
+          .index {
+            padding: 0;
+          }
+        }
+
         .welcome {
           display: flex;
           align-items: center;
@@ -548,6 +554,7 @@ export default function Home() {
           animation: rotatePlus 10s linear infinite;
           transform:rotate(0) translate(20vh) rotate(0);
         }
+
       `}</style>
     </div>
   )
