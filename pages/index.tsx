@@ -274,8 +274,8 @@ export default function Home() {
 
         .projects {
           display: flex;
-          min-height: 150vh;
-          height: 150vh;
+          min-height: 170vh;
+          height: 170vh;
           align-items: center;
         }
 
