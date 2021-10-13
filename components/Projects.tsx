@@ -12,13 +12,13 @@ const Projects = (props: any): any => {
                             My Pet Just Ate
                         </div>
                     </a>
-                    <a href='https://github.com/rei-bp/Viberant-server' className='techLink' target="_blank" rel="noopener noreferrer">
+                    <a href='https://github.com/rei-bp/MyPetJustAte' className='techLink' target="_blank" rel="noopener noreferrer">
                         <div className='tech'>
-                            MongoDB, Express, React, and Node (MERN) <AiOutlineGithub fontSize='1.5rem' />
+                            MongoDB, Express, React, and Node (MERN), and Mapbox API <AiOutlineGithub fontSize='1.5rem' />
                         </div>
                     </a>
                     <div className='description'>
-                        Hackathon produced with a small team of devs and designers. A quick lookup app that identifies if a food is safe or not with integrated emergency contact
+                        A quick lookup app that identifies if a food is safe or not with integrated emergency services. Hackathon produced with a small team of devs and designers. 
                     </div>
                 </div>
                 <div className='ssContainer'>
@@ -55,10 +55,10 @@ const Projects = (props: any): any => {
                         <div className='projectTitle'>NBA Bite!</div>
                     </a>
                     <a href='https://github.com/rei-bp/Nba-bite' className='techLink' target="_blank" rel="noopener noreferrer">
-                        <div className='tech'> Express, EJS, Postgres and TS conversion <AiOutlineGithub fontSize='1.5rem' />
+                        <div className='tech'> Express, EJS, Postgres, and Balldontlie API with a TypeScript conversion <AiOutlineGithub fontSize='1.5rem' />
                         </div>
                     </a>
-                    <div className='description'>NBA statistics app with CRUD capabilities that looks up players and finds their average season stats using the balldontlie API.
+                    <div className='description'>NBA statistics app with CRUD capabilities that looks up players and finds their average season stats.
                     </div>
                 </div>
                 <div className='ssContainer'>

@@ -263,6 +263,7 @@ export default function Home() {
           min-height: 50vh;
           height: 50vh;
           align-items: center;
+          margin-bottom: 20vh;
         }
 
         .skills {
@@ -275,8 +276,7 @@ export default function Home() {
 
         .projects {
           display: flex;
-          min-height: 230vh;
-          height: 230vh;
+
           align-items: center;
         }
 
