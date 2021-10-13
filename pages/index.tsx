@@ -270,12 +270,13 @@ export default function Home() {
           min-height: 70vh;
           height: 70vh;
           align-items: center;
+          margin-bottom: 20vh;
         }
 
         .projects {
           display: flex;
-          min-height: 170vh;
-          height: 170vh;
+          min-height: 230vh;
+          height: 230vh;
           align-items: center;
         }
 

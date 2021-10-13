@@ -7,6 +7,28 @@ const Projects = (props: any): any => {
             <div className={props.scroll}>Projects</div>
             <div className='card'>
                 <div className='descriptionContainer'>
+                    <a href='https://mypetjustate.herokuapp.com/home' className='techLink' target="_blank" rel="noopener noreferrer">
+                        <div className='projectTitle'>
+                            My Pet Just Ate
+                        </div>
+                    </a>
+                    <a href='https://github.com/rei-bp/Viberant-server' className='techLink' target="_blank" rel="noopener noreferrer">
+                        <div className='tech'>
+                            MongoDB, Express, React, and Node (MERN) <AiOutlineGithub fontSize='1.5rem' />
+                        </div>
+                    </a>
+                    <div className='description'>
+                        Hackathon produced with a small team of devs and designers. A quick lookup app that identifies if a food is safe or not with integrated emergency contact
+                    </div>
+                </div>
+                <div className='ssContainer'>
+                    <a href='https://mypetjustate.herokuapp.com/home' target="_blank" rel="noopener noreferrer">
+                        <Image className='magikarp' src='/mypetjustate.png' alt='my pet just ate screenshot' height='400vh' width='500vh' />
+                    </a>
+                </div>
+            </div>
+            <div className='card'>
+                <div className='descriptionContainer'>
                     <a href='https://admiring-spence-c2dab0.netlify.app' className='techLink' target="_blank" rel="noopener noreferrer">
                         <div className='projectTitle'>
                             Viberant
@@ -28,11 +50,6 @@ const Projects = (props: any): any => {
                 </div>
             </div>
             <div className='card'>
-                <div className='ssContainer'>
-                    <a href='https://nba-bite.herokuapp.com' target="_blank" rel="noopener noreferrer">
-                        <Image src='/nbabite.png' alt='nba bite screen shot' height='400rem' width='500rem' />
-                    </a>
-                </div>
                 <div className='descriptionContainer'>
                     <a href='https://nba-bite.herokuapp.com' className='techLink' target="_blank" rel="noopener noreferrer">
                         <div className='projectTitle'>NBA Bite!</div>
@@ -43,6 +60,11 @@ const Projects = (props: any): any => {
                     </a>
                     <div className='description'>NBA statistics app with CRUD capabilities that looks up players and finds their average season stats using the balldontlie API.
                     </div>
+                </div>
+                <div className='ssContainer'>
+                    <a href='https://nba-bite.herokuapp.com' target="_blank" rel="noopener noreferrer">
+                        <Image src='/nbabite.png' alt='nba bite screen shot' height='400rem' width='500rem' />
+                    </a>
                 </div>
             </div>
             <div className='card'>
