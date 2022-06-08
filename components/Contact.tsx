@@ -20,7 +20,7 @@ const Contact = () : any => {
     return (
         <div className="contact">
             <div className='title'>Say hello at <button title='click to copy!' className='me' onClick={copy} ref={nameRef}>reinard.bp@gmail.com</button></div>
-            <div className='description'>I am currently open to opportunities! If you have any questions at all or if you would just like to say hello I'd be more than happy to hear from you.</div>
+            <div className='description'>I am currently not open for opportunities but would still love to hear from you!</div>
             <div className='resume'>
                 <a href='Reinard-Pagdilao-Resume.pdf'><button>Resume</button></a>
             </div>
